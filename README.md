@@ -1,6 +1,6 @@
 # exBlend - Simple Script to Export Your Blender File to Various Format
 
-This thesis is still in its early stages and will be updated regularly. exBlend is by default a simple script to bulk export *.blend files from a directory into obj, fbx, and glb formats.
+This scrips is still in its early stages and will be updated regularly. exBlend is by default a simple script to bulk export *.blend files from a directory into obj, fbx, and glb formats.
 Testing and fixing this script is always welcome. 
 
 ## Usage
