@@ -59,10 +59,10 @@ Now you can user `-fmt` or `--format` to specify export format (obj, fbx, or glb
 
 
 ## Need Improvement
-- [] Export paramerter adjustment
-- [] Reclean the output prompt
-- [] Supporting other format(?)
-- [] providing single binary like AppImage
+- [ ] Export paramerter adjustment
+- [ ] Reclean the output prompt
+- [ ] Supporting other format(?)
+- [ ] providing single binary like AppImage
 
 
 ## Behind This Scripts
