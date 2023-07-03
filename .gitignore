@@ -1,8 +1,8 @@
-*.blend
-*.fbx
-*.obj
-*.glb
-hasil
-result
-source
-sample
+./*.blend
+./*.fbx
+./*.obj
+./*.glb
+./hasil
+./result
+./source
+#sample
