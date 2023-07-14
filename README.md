@@ -57,7 +57,7 @@ Now you can user `-fmt` or `--format` to specify export format (obj, fbx, or glb
 
 #### Windows Powershell
 ```ps1
-./exblend.ps1 -i source -o results -fmt "obj fbx"
+.\exblend.ps1 -i source -o results -fmt "obj fbx"
 
 ```
 
