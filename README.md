@@ -49,8 +49,15 @@ blender -b -P libs/to-glb.py -- -i input.blend -o output.glb
 ### Update
 Now you can user `-fmt` or `--format` to specify export format (obj, fbx, or glb). 
 
+#### Linux
 ```bash
 ./exblend.bat -i source -o results -fmt "obj fbx"
+
+```
+
+#### Windows Powershell
+```ps1
+./exblend.ps1 -i source -o results -fmt "obj fbx"
 
 ```
 
