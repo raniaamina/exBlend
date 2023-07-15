@@ -18,11 +18,9 @@ $env:PATH = "C:\Program Files\Blender Foundation\Blender 3.6"
 
 $VERSION = "v1.0-devlovers"
 $LOGDIR = "C:\Temp\exblend"
-# $TIMESTAMP = Get-Date -Format "yyyy-MM-dd_HH:mm"
 $STOPWATCH = [System.Diagnostics.Stopwatch]::StartNew()
 $LOGFILE = Join-Path $LOGDIR "$TIMESTAMP.log"
 $OPTFORMATS = "obj", "OBJ", "FBX", "fbx", "GLB", "glb"
-$START = [System.Diagnostics.Stopwatch]::StartNew()
 
 function usage {
     Write-Host "$PSCommandPath $VERSION"
@@ -68,10 +66,6 @@ if (-not (Get-Command blender -ErrorAction SilentlyContinue)) {
     exit 1
 }
 else {
-    if ($Host.UI.RawUI.WindowSize.Width -gt 50) {
-        Write-Host ""
-    }
-    else {
         Write-Host @"
 __________________________________________________
                                                     
@@ -81,9 +75,8 @@ __________________________________________________
  #""""   m#m   #    #   #    #""""  #   #  #   # 
  "#mm"  m" "m  #mmmm"   "mm  "#mm"  #   #  "#m## 
 "@
-    }
     Write-Host "-------------------------------------------------"
-    Write-Host "exBlend menggunakan engine: Blender"
+    Write-Host "exBlend menggunakan engine: $(blender --version | Select-Object -First 1)"
     Write-Host "-------------------------------------------------"
     Write-Host
 }
